@@ -1,0 +1,61 @@
+/* ==========================================================================
+   KAPE CODE - CUSTOM STYLESHEET
+   Dark, Minimalist Technical Theme
+   ========================================================================== */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Animations & Transitions */
+.view-section {
+  animation: fadeIn 0.25s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom UI Polish */
+.glass-panel {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-hover {
+  transition: all 0.2s ease;
+}
+
+.glow-hover:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.15);
+}
+
+/* Grid Pattern Background Accent */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
